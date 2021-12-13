@@ -197,7 +197,7 @@ JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
 REST_AUTH_REGISTER_SERIALIZERS = {
     'REGISTER_SERIALIZER': 'authentication.serializers.CustomUserRegisterSerializer',
 }
-STATICFILES_DIRS=[
-     os.path.join(BASE_DIR,'build/static')
- ]
+# STATICFILES_DIRS=[
+#      os.path.join(BASE_DIR,'build/static')
+#  ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'build/static')
