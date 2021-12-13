@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 from dj_rest_auth.registration.views import VerifyEmailView, ConfirmEmailView
 from dj_rest_auth.views import PasswordResetConfirmView
 urlpatterns = [
+    path('',views.index,name='index'),
     path('admin/', admin.site.urls),
     path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
     path('api/v1/dj-rest-auth/registration/',
