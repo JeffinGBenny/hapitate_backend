@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-
+from .views import index
 from dj_rest_auth.registration.views import VerifyEmailView, ConfirmEmailView
 from dj_rest_auth.views import PasswordResetConfirmView
 urlpatterns = [
